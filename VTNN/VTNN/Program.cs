@@ -1,8 +1,12 @@
-﻿using System;
+﻿using DevExpress.LookAndFeel;
+using DevExpress.Skins;
+using DevExpress.UserSkins;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VTNN.Common;
 
 namespace VTNN
 {
@@ -16,7 +20,10 @@ namespace VTNN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            BonusSkins.Register();
+            SkinManager.EnableFormSkins();
+            UserLookAndFeel.Default.SetSkinStyle("Office 2010 Blue");
+            Application.Run(new frmMain());
         }
     }
 }
