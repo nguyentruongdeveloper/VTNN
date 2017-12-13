@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using VTNN.GUI.Common;
+using DevExpress.XtraBars;
 
 namespace VTNN.GUI.BanHang
 {
@@ -22,6 +23,10 @@ namespace VTNN.GUI.BanHang
         private void frmChiTietBanHang_Load(object sender, EventArgs e)
         {
 
+        }
+        protected override void btn_MenuContext_Add_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            base.btn_MenuContext_Add_ItemClick(sender, e);
         }
     }
 }
