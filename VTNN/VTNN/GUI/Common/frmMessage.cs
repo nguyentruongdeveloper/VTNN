@@ -17,5 +17,10 @@ namespace VTNN.GUI.Common
         {
             
         }
+
+        private void pteIcon_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

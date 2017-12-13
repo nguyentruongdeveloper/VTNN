@@ -46,20 +46,20 @@
             this.lblMessage.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.lblMessage.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
             this.lblMessage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblMessage.Location = new System.Drawing.Point(120, 0);
-            this.lblMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblMessage.Location = new System.Drawing.Point(154, 0);
+            this.lblMessage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Padding = new System.Windows.Forms.Padding(6, 6, 6, 2);
-            this.lblMessage.Size = new System.Drawing.Size(328, 8);
+            this.lblMessage.Padding = new System.Windows.Forms.Padding(8, 7, 8, 2);
+            this.lblMessage.Size = new System.Drawing.Size(422, 9);
             this.lblMessage.TabIndex = 4;
             // 
             // btnOk
             // 
             this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOk.Location = new System.Drawing.Point(261, 96);
-            this.btnOk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnOk.Location = new System.Drawing.Point(336, 114);
+            this.btnOk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(87, 28);
+            this.btnOk.Size = new System.Drawing.Size(112, 33);
             this.btnOk.TabIndex = 5;
             this.btnOk.Text = "&Xác nhận";
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
@@ -68,10 +68,10 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(355, 96);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Location = new System.Drawing.Point(456, 114);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(87, 28);
+            this.btnCancel.Size = new System.Drawing.Size(112, 33);
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "&Hủy";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -82,7 +82,7 @@
             this.pteIcon.Dock = System.Windows.Forms.DockStyle.Left;
             this.pteIcon.EditValue = global::VTNN.Properties.Resources.confirm;
             this.pteIcon.Location = new System.Drawing.Point(0, 0);
-            this.pteIcon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pteIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pteIcon.Name = "pteIcon";
             this.pteIcon.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pteIcon.Properties.Appearance.Options.UseBackColor = true;
@@ -92,16 +92,16 @@
             this.pteIcon.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pteIcon.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.pteIcon.Properties.ZoomAccelerationFactor = 1D;
-            this.pteIcon.Size = new System.Drawing.Size(120, 130);
+            this.pteIcon.Size = new System.Drawing.Size(154, 154);
             this.pteIcon.TabIndex = 3;
             // 
             // frmConfirm
             // 
             this.AcceptButton = this.btnOk;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(448, 130);
+            this.ClientSize = new System.Drawing.Size(576, 154);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.lblMessage);
@@ -109,7 +109,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.LookAndFeel.SkinName = "Office 2013";
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmConfirm";

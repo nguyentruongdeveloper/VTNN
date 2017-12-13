@@ -45,19 +45,19 @@
             this.lblMessage.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.lblMessage.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
             this.lblMessage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblMessage.Location = new System.Drawing.Point(121, 0);
-            this.lblMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblMessage.Location = new System.Drawing.Point(156, 0);
+            this.lblMessage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Padding = new System.Windows.Forms.Padding(6, 6, 6, 2);
-            this.lblMessage.Size = new System.Drawing.Size(327, 8);
+            this.lblMessage.Padding = new System.Windows.Forms.Padding(8, 7, 8, 2);
+            this.lblMessage.Size = new System.Drawing.Size(420, 9);
             this.lblMessage.TabIndex = 0;
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(335, 95);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnOK.Location = new System.Drawing.Point(431, 113);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(110, 28);
+            this.btnOK.Size = new System.Drawing.Size(141, 33);
             this.btnOK.TabIndex = 1;
             this.btnOK.Text = "Xác nhận";
             this.btnOK.Click += new System.EventHandler(this.btnOk_Click);
@@ -68,7 +68,7 @@
             this.pteIcon.Dock = System.Windows.Forms.DockStyle.Left;
             this.pteIcon.EditValue = global::VTNN.Properties.Resources.information;
             this.pteIcon.Location = new System.Drawing.Point(0, 0);
-            this.pteIcon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pteIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pteIcon.Name = "pteIcon";
             this.pteIcon.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pteIcon.Properties.Appearance.Options.UseBackColor = true;
@@ -78,16 +78,17 @@
             this.pteIcon.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pteIcon.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.pteIcon.Properties.ZoomAccelerationFactor = 1D;
-            this.pteIcon.Size = new System.Drawing.Size(121, 127);
+            this.pteIcon.Size = new System.Drawing.Size(156, 151);
             this.pteIcon.TabIndex = 2;
+            this.pteIcon.EditValueChanged += new System.EventHandler(this.pteIcon_EditValueChanged);
             // 
             // frmMessage
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(448, 127);
+            this.ClientSize = new System.Drawing.Size(576, 151);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.pteIcon);
@@ -95,7 +96,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.LookAndFeel.SkinName = "Office 2010 Blue";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMessage";

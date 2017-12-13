@@ -75,11 +75,11 @@ namespace QuanLyCongNo.GUI.Common
             this.lcMain.Controls.Add(this.txt_Login_DangNhap);
             this.lcMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lcMain.Location = new System.Drawing.Point(0, 0);
-            this.lcMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lcMain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lcMain.Name = "lcMain";
             this.lcMain.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(918, 137, 250, 350);
             this.lcMain.Root = this.layoutControlGroup1;
-            this.lcMain.Size = new System.Drawing.Size(449, 167);
+            this.lcMain.Size = new System.Drawing.Size(577, 198);
             this.lcMain.TabIndex = 0;
             this.lcMain.Text = "layoutControl1";
             // 
@@ -89,19 +89,18 @@ namespace QuanLyCongNo.GUI.Common
             this.lblMessage.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.lblMessage.Appearance.Options.UseFont = true;
             this.lblMessage.Appearance.Options.UseForeColor = true;
-            this.lblMessage.Location = new System.Drawing.Point(114, 103);
-            this.lblMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblMessage.Location = new System.Drawing.Point(114, 107);
+            this.lblMessage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(319, 11);
+            this.lblMessage.Size = new System.Drawing.Size(447, 11);
             this.lblMessage.StyleController = this.lcMain;
             this.lblMessage.TabIndex = 7;
             // 
             // pictureEdit1
             // 
             this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit1.EditValue = global::VTNN.Properties.Resources.LoginIcon;
             this.pictureEdit1.Location = new System.Drawing.Point(16, 16);
-            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -109,7 +108,7 @@ namespace QuanLyCongNo.GUI.Common
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
-            this.pictureEdit1.Size = new System.Drawing.Size(92, 135);
+            this.pictureEdit1.Size = new System.Drawing.Size(92, 166);
             this.pictureEdit1.StyleController = this.lcMain;
             this.pictureEdit1.TabIndex = 6;
             // 
@@ -117,12 +116,12 @@ namespace QuanLyCongNo.GUI.Common
             // 
             this.btn_Login_Huy.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_Login_Huy.Image = ((System.Drawing.Image)(resources.GetObject("btn_Login_Huy.Image")));
-            this.btn_Login_Huy.Location = new System.Drawing.Point(333, 120);
-            this.btn_Login_Huy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Login_Huy.MaximumSize = new System.Drawing.Size(100, 0);
-            this.btn_Login_Huy.MinimumSize = new System.Drawing.Size(100, 0);
+            this.btn_Login_Huy.Location = new System.Drawing.Point(432, 124);
+            this.btn_Login_Huy.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Login_Huy.MaximumSize = new System.Drawing.Size(129, 0);
+            this.btn_Login_Huy.MinimumSize = new System.Drawing.Size(129, 0);
             this.btn_Login_Huy.Name = "btn_Login_Huy";
-            this.btn_Login_Huy.Size = new System.Drawing.Size(100, 27);
+            this.btn_Login_Huy.Size = new System.Drawing.Size(129, 28);
             this.btn_Login_Huy.StyleController = this.lcMain;
             this.btn_Login_Huy.TabIndex = 5;
             this.btn_Login_Huy.Text = "&Hủy";
@@ -130,50 +129,50 @@ namespace QuanLyCongNo.GUI.Common
             // btn_Login_DangNhap
             // 
             this.btn_Login_DangNhap.Image = ((System.Drawing.Image)(resources.GetObject("btn_Login_DangNhap.Image")));
-            this.btn_Login_DangNhap.Location = new System.Drawing.Point(220, 120);
-            this.btn_Login_DangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Login_DangNhap.MaximumSize = new System.Drawing.Size(100, 0);
+            this.btn_Login_DangNhap.Location = new System.Drawing.Point(297, 124);
+            this.btn_Login_DangNhap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Login_DangNhap.MaximumSize = new System.Drawing.Size(129, 0);
             this.btn_Login_DangNhap.Name = "btn_Login_DangNhap";
-            this.btn_Login_DangNhap.Size = new System.Drawing.Size(100, 27);
+            this.btn_Login_DangNhap.Size = new System.Drawing.Size(129, 28);
             this.btn_Login_DangNhap.StyleController = this.lcMain;
             this.btn_Login_DangNhap.TabIndex = 4;
             this.btn_Login_DangNhap.Text = "&Đăng nhập";
             // 
             // ck_Login_GhiNho
             // 
-            this.ck_Login_GhiNho.Location = new System.Drawing.Point(114, 76);
-            this.ck_Login_GhiNho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ck_Login_GhiNho.Location = new System.Drawing.Point(114, 80);
+            this.ck_Login_GhiNho.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ck_Login_GhiNho.Name = "ck_Login_GhiNho";
             this.ck_Login_GhiNho.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.ck_Login_GhiNho.Properties.Appearance.Options.UseFont = true;
             this.ck_Login_GhiNho.Properties.Caption = "&Nhớ tài khoản và mật khẩu";
-            this.ck_Login_GhiNho.Size = new System.Drawing.Size(319, 21);
+            this.ck_Login_GhiNho.Size = new System.Drawing.Size(447, 21);
             this.ck_Login_GhiNho.StyleController = this.lcMain;
             this.ck_Login_GhiNho.TabIndex = 3;
             // 
             // txt_Login_MatKhau
             // 
             this.txt_Login_MatKhau.EditValue = "";
-            this.txt_Login_MatKhau.Location = new System.Drawing.Point(215, 48);
-            this.txt_Login_MatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_Login_MatKhau.Location = new System.Drawing.Point(232, 48);
+            this.txt_Login_MatKhau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_Login_MatKhau.Name = "txt_Login_MatKhau";
             this.txt_Login_MatKhau.Properties.MaxLength = 50;
             this.txt_Login_MatKhau.Properties.PasswordChar = '*';
             this.txt_Login_MatKhau.Properties.UseSystemPasswordChar = true;
-            this.txt_Login_MatKhau.Size = new System.Drawing.Size(218, 22);
+            this.txt_Login_MatKhau.Size = new System.Drawing.Size(329, 26);
             this.txt_Login_MatKhau.StyleController = this.lcMain;
             this.txt_Login_MatKhau.TabIndex = 2;
             // 
             // txt_Login_DangNhap
             // 
             this.txt_Login_DangNhap.EditValue = "";
-            this.txt_Login_DangNhap.Location = new System.Drawing.Point(215, 16);
-            this.txt_Login_DangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_Login_DangNhap.Location = new System.Drawing.Point(232, 16);
+            this.txt_Login_DangNhap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_Login_DangNhap.Name = "txt_Login_DangNhap";
             this.txt_Login_DangNhap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Login_DangNhap.Properties.Appearance.Options.UseFont = true;
             this.txt_Login_DangNhap.Properties.MaxLength = 20;
-            this.txt_Login_DangNhap.Size = new System.Drawing.Size(218, 26);
+            this.txt_Login_DangNhap.Size = new System.Drawing.Size(329, 26);
             this.txt_Login_DangNhap.StyleController = this.lcMain;
             this.txt_Login_DangNhap.TabIndex = 1;
             // 
@@ -192,7 +191,7 @@ namespace QuanLyCongNo.GUI.Common
             this.emptySpaceItem1});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(449, 167);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(577, 198);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -200,25 +199,25 @@ namespace QuanLyCongNo.GUI.Common
             this.layoutControlItem2.Control = this.txt_Login_MatKhau;
             this.layoutControlItem2.Location = new System.Drawing.Point(98, 32);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(325, 28);
+            this.layoutControlItem2.Size = new System.Drawing.Size(453, 32);
             this.layoutControlItem2.Text = "&Mật khẩu: ";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(98, 17);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(115, 19);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.txt_Login_DangNhap;
             this.layoutControlItem1.Location = new System.Drawing.Point(98, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(325, 32);
+            this.layoutControlItem1.Size = new System.Drawing.Size(453, 32);
             this.layoutControlItem1.Text = "&Tên đăng nhập:";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(98, 17);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(115, 19);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.ck_Login_GhiNho;
-            this.layoutControlItem3.Location = new System.Drawing.Point(98, 60);
+            this.layoutControlItem3.Location = new System.Drawing.Point(98, 64);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(325, 27);
+            this.layoutControlItem3.Size = new System.Drawing.Size(453, 27);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
@@ -226,9 +225,9 @@ namespace QuanLyCongNo.GUI.Common
             // 
             this.lciDangNhap.Control = this.btn_Login_DangNhap;
             this.lciDangNhap.ControlAlignment = System.Drawing.ContentAlignment.TopRight;
-            this.lciDangNhap.Location = new System.Drawing.Point(204, 104);
+            this.lciDangNhap.Location = new System.Drawing.Point(281, 108);
             this.lciDangNhap.Name = "lciDangNhap";
-            this.lciDangNhap.Size = new System.Drawing.Size(113, 37);
+            this.lciDangNhap.Size = new System.Drawing.Size(135, 64);
             this.lciDangNhap.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.lciDangNhap.TextSize = new System.Drawing.Size(0, 0);
             this.lciDangNhap.TextToControlDistance = 0;
@@ -238,9 +237,9 @@ namespace QuanLyCongNo.GUI.Common
             // 
             this.lciHuy.Control = this.btn_Login_Huy;
             this.lciHuy.ControlAlignment = System.Drawing.ContentAlignment.TopRight;
-            this.lciHuy.Location = new System.Drawing.Point(317, 104);
+            this.lciHuy.Location = new System.Drawing.Point(416, 108);
             this.lciHuy.Name = "lciHuy";
-            this.lciHuy.Size = new System.Drawing.Size(106, 37);
+            this.lciHuy.Size = new System.Drawing.Size(135, 64);
             this.lciHuy.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.lciHuy.TextSize = new System.Drawing.Size(0, 0);
             this.lciHuy.TextToControlDistance = 0;
@@ -253,7 +252,7 @@ namespace QuanLyCongNo.GUI.Common
             this.layoutControlItem5.MaxSize = new System.Drawing.Size(98, 0);
             this.layoutControlItem5.MinSize = new System.Drawing.Size(98, 24);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(98, 141);
+            this.layoutControlItem5.Size = new System.Drawing.Size(98, 172);
             this.layoutControlItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
@@ -261,11 +260,11 @@ namespace QuanLyCongNo.GUI.Common
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.lblMessage;
-            this.layoutControlItem7.Location = new System.Drawing.Point(98, 87);
+            this.layoutControlItem7.Location = new System.Drawing.Point(98, 91);
             this.layoutControlItem7.MaxSize = new System.Drawing.Size(0, 17);
             this.layoutControlItem7.MinSize = new System.Drawing.Size(17, 17);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(325, 17);
+            this.layoutControlItem7.Size = new System.Drawing.Size(453, 17);
             this.layoutControlItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem7.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
@@ -276,23 +275,23 @@ namespace QuanLyCongNo.GUI.Common
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(98, 104);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(98, 108);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(106, 37);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(183, 64);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmLogin
             // 
             this.AcceptButton = this.btn_Login_DangNhap;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btn_Login_Huy;
-            this.ClientSize = new System.Drawing.Size(449, 167);
+            this.ClientSize = new System.Drawing.Size(577, 198);
             this.Controls.Add(this.lcMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";

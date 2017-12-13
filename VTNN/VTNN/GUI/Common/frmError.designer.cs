@@ -48,10 +48,10 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(349, 80);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnOK.Location = new System.Drawing.Point(449, 95);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(93, 28);
+            this.btnOK.Size = new System.Drawing.Size(120, 33);
             this.btnOK.TabIndex = 4;
             this.btnOK.Text = "Thoát";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -66,11 +66,11 @@
             this.lblMessage.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.lblMessage.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.Vertical;
             this.lblMessage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblMessage.Location = new System.Drawing.Point(127, 2);
-            this.lblMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lblMessage.Location = new System.Drawing.Point(163, 2);
+            this.lblMessage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Padding = new System.Windows.Forms.Padding(6, 6, 6, 2);
-            this.lblMessage.Size = new System.Drawing.Size(319, 8);
+            this.lblMessage.Padding = new System.Windows.Forms.Padding(8, 7, 8, 2);
+            this.lblMessage.Size = new System.Drawing.Size(411, 9);
             this.lblMessage.TabIndex = 5;
             // 
             // pnTop
@@ -83,17 +83,18 @@
             this.pnTop.Controls.Add(this.btnOK);
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTop.Location = new System.Drawing.Point(0, 0);
-            this.pnTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnTop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(448, 137);
+            this.pnTop.Size = new System.Drawing.Size(576, 163);
             this.pnTop.TabIndex = 7;
             // 
             // llbDetail
             // 
             this.llbDetail.AutoSize = true;
-            this.llbDetail.Location = new System.Drawing.Point(346, 112);
+            this.llbDetail.Location = new System.Drawing.Point(445, 133);
+            this.llbDetail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.llbDetail.Name = "llbDetail";
-            this.llbDetail.Size = new System.Drawing.Size(102, 17);
+            this.llbDetail.Size = new System.Drawing.Size(120, 19);
             this.llbDetail.TabIndex = 7;
             this.llbDetail.TabStop = true;
             this.llbDetail.Text = "Hiện chi tiết >>";
@@ -105,7 +106,7 @@
             this.pteIcon.Dock = System.Windows.Forms.DockStyle.Left;
             this.pteIcon.EditValue = global::VTNN.Properties.Resources.Error;
             this.pteIcon.Location = new System.Drawing.Point(2, 2);
-            this.pteIcon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pteIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pteIcon.Name = "pteIcon";
             this.pteIcon.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pteIcon.Properties.Appearance.Options.UseBackColor = true;
@@ -114,25 +115,25 @@
             this.pteIcon.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pteIcon.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pteIcon.Properties.ZoomAccelerationFactor = 1D;
-            this.pteIcon.Size = new System.Drawing.Size(125, 133);
+            this.pteIcon.Size = new System.Drawing.Size(161, 159);
             this.pteIcon.TabIndex = 3;
             // 
             // btnContinue
             // 
-            this.btnContinue.Location = new System.Drawing.Point(148, 80);
-            this.btnContinue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnContinue.Location = new System.Drawing.Point(190, 95);
+            this.btnContinue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(93, 28);
+            this.btnContinue.Size = new System.Drawing.Size(120, 33);
             this.btnContinue.TabIndex = 4;
             this.btnContinue.Text = "Tiếp tục";
             this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // btnRestart
             // 
-            this.btnRestart.Location = new System.Drawing.Point(248, 80);
-            this.btnRestart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnRestart.Location = new System.Drawing.Point(319, 95);
+            this.btnRestart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRestart.Name = "btnRestart";
-            this.btnRestart.Size = new System.Drawing.Size(93, 28);
+            this.btnRestart.Size = new System.Drawing.Size(120, 33);
             this.btnRestart.TabIndex = 4;
             this.btnRestart.Text = "Khởi động lại";
             this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
@@ -141,31 +142,31 @@
             // 
             this.pnBottom.Controls.Add(this.meError);
             this.pnBottom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnBottom.Location = new System.Drawing.Point(0, 137);
-            this.pnBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnBottom.Location = new System.Drawing.Point(0, 163);
+            this.pnBottom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnBottom.Name = "pnBottom";
-            this.pnBottom.Size = new System.Drawing.Size(448, 0);
+            this.pnBottom.Size = new System.Drawing.Size(576, 0);
             this.pnBottom.TabIndex = 8;
             // 
             // meError
             // 
             this.meError.Dock = System.Windows.Forms.DockStyle.Fill;
             this.meError.Location = new System.Drawing.Point(2, 1);
-            this.meError.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.meError.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.meError.Name = "meError";
-            this.meError.Size = new System.Drawing.Size(444, 0);
+            this.meError.Size = new System.Drawing.Size(572, 0);
             this.meError.TabIndex = 0;
             // 
             // frmError
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(448, 135);
+            this.ClientSize = new System.Drawing.Size(576, 160);
             this.Controls.Add(this.pnBottom);
             this.Controls.Add(this.pnTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.LookAndFeel.SkinName = "Office 2013";
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmError";
