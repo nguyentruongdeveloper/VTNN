@@ -8,81 +8,82 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using VTNN.GUI.Common;
 
 namespace VTNN.GUI.DanhMuc
 {
-    public partial class frmDanhMucBase : DevExpress.XtraEditors.XtraForm
+    public partial class frmDanhMucBase : frmTemplate
     {
+
         public frmDanhMucBase()
         {
             InitializeComponent();
         }
 
-       
-
         private void frmDanhMucBase_Load(object sender, EventArgs e)
         {
 
-        }
-        protected virtual void loadDataForm(int p_iAuto_ID)
-        {
 
         }
-        protected virtual void Add()
-        {
 
-        }
-        protected virtual void Updated()
-        {
 
-        }
-        protected virtual void Deleted()
-        {
 
-        }
-        protected virtual void Refesh()
-        {
-
-        }
-        protected virtual void Export()
-        {
-
-        }
-        protected virtual void CloseForm()
-        {
-
-        }
-        private void bar_btn_ThemMoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        protected virtual void bar_btn_ThemMoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }
 
-        private void bar_btn_Sua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        protected virtual void bar_btn_Sua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }
 
-        private void bar_btn_Xoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        protected virtual void bar_btn_Xoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }
 
-        private void bar_btn_NapLai_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        protected virtual void bar_btn_NapLai_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }
 
-        private void bar_btn_Xuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        protected virtual void bar_btn_Xuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }
 
-        private void bar_btn_In_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        protected virtual void bar_btn_In_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }
 
-        private void bar_btn_Dong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        protected virtual void bar_btn_Dong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        protected virtual void bar_btn_MenuContext_Add_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        protected virtual void bar_btn_MenuContext_Updated_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        protected virtual void bar_btn_Menu_Context_Deleted_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        protected virtual void bar_btn_MenuContext_Refesh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        protected virtual void bar_btn_MenuContext_Close_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }

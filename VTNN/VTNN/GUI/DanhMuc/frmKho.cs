@@ -8,25 +8,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using BUS.DanhMuc;
-using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraBars;
+using BUS.DanhMuc;
 using VTNN.GUI.DanhMuc.Sub;
-using VTNN.Extensions;
 using DTO.DanhMuc;
+using VTNN.Extensions;
 using VTNN.GUI.Common;
 
 namespace VTNN.GUI.DanhMuc
 {
-    public partial class frmKhachHang : frmTemplateCategory, IDanhMuc
+    public partial class frmKho : frmTemplateCategory, IDanhMuc
     {
-
-
-        public frmKhachHang()
+        public frmKho()
         {
             InitializeComponent();
         }
-        CDM_Khach_Hang_BUS _objKhachHangBUS = CDM_Khach_Hang_BUS.getInstance();
+        CDM_Kho_BUS _objKhoBUS = CDM_Kho_BUS.getInstance();
         private void frmKhachHang_Load(object sender, EventArgs e)
         {
             FormatControl();
@@ -37,7 +34,7 @@ namespace VTNN.GUI.DanhMuc
         public void FormatControl()
         {
             FormatControl(this);
-         
+            //grcKho.FormatGridView_VS1(false, false);
         }
         protected override void FormatControl(Control p_objControl)
         {
@@ -49,12 +46,12 @@ namespace VTNN.GUI.DanhMuc
         }
         public void Load_Data_Form()
         {
-            grcKhachHang.DataSource = _objKhachHangBUS.Get_List_All();
+            grcKho.DataSource = _objKhoBUS.Get_List_All();
             Show_Button_MenuContext();
         }
         private void Show_Button_MenuContext()
         {
-            if (grvKhachHang.RowCount <= 0)
+            if (grvKho.RowCount <= 0)
             {
                 bar_btn_MenuContext_Updated.Enabled = false;
                 bar_btn_Menu_Context_Deleted.Enabled = false;
@@ -67,7 +64,7 @@ namespace VTNN.GUI.DanhMuc
         }
         public void Add()
         {
-            using (frmChiTietKhachHang frm = new frmChiTietKhachHang())
+            using (frmChitietKho frm = new frmChitietKho())
             {
                 frm.fStatus = Utility.FormStatus.Add;
                 frm.ReLoadParent = this.Load_Data_Form;
@@ -78,33 +75,30 @@ namespace VTNN.GUI.DanhMuc
         }
         public void Updated()
         {
-            if (grvKhachHang.RowCount > 0 && grvKhachHang.FocusedRowHandle >= 0)
-            {
-                using (frmChiTietKhachHang frm = new frmChiTietKhachHang())
+            if (grvKho.RowCount > 0 && grvKho.FocusedRowHandle >= 0)
+                using (frmChitietKho frm = new frmChitietKho())
                 {
 
                     frm.fStatus = Utility.FormStatus.Edit;
-                    CDM_Khach_Hang v_objKhachHang = (CDM_Khach_Hang)grvKhachHang.GetRow(grvKhachHang.FocusedRowHandle);
-                    frm._objKhachHang = v_objKhachHang;
+                    CDM_Kho v_objKho = (CDM_Kho)grvKho.GetRow(grvKho.FocusedRowHandle);
+                    frm._objKho = v_objKho;
                     frm.ReLoadParent = this.Load_Data_Form;
                     frm.ShowDialog();
 
                 }
-            }
-
 
         }
         public void Deleted()
         {
-            if (grvKhachHang.RowCount > 0 && grvKhachHang.FocusedRowHandle >= 0 && CExtensions.showConfirmMessage("Xác nhận xóa dữ liệu"))
+            if (grvKho.RowCount > 0 && grvKho.FocusedRowHandle >= 0 && CExtensions.showConfirmMessage("Xác nhận xóa dữ liệu"))
             {
 
-                CDM_Khach_Hang v_objKhachHang = (CDM_Khach_Hang)grvKhachHang.GetRow(grvKhachHang.FocusedRowHandle);
+                CDM_Khach_Hang v_objKhachHang = (CDM_Khach_Hang)grvKho.GetRow(grvKho.FocusedRowHandle);
                 if (v_objKhachHang != null)
                 {
                     try
                     {
-                        _objKhachHangBUS.Deleted(v_objKhachHang.Auto_ID, "Admin");
+                        _objKhoBUS.Deleted(v_objKhachHang.Auto_ID, "Admin");
                         CExtensions.showMessage("Xóa dữ liệu thành công!");
                         Load_Data_Form();
                     }
@@ -172,77 +166,6 @@ namespace VTNN.GUI.DanhMuc
         protected override void bar_btn_Menu_Closed_ItemClick(object sender, ItemClickEventArgs e)
         {
             CloseForm();
-        }
-
-        //private void FormatControl()
-        //{
-
-        //    FormatControl(this);
-        //}
-        //protected override void FormatControl(Control p_objControl)
-        //{
-        //    base.FormatControl(p_objControl);
-        //}
-        //protected override void loadDataForm(int p_iAuto_ID)
-        //{
-        //    _blistKhachHang = new BindingList<CDM_Khach_Hang>(_objKhachHangBUS.List_DM_Khach_Hang());
-        //    grcKhachHang.DataSource = _blistKhachHang;
-        //}
-
-        private void CustomGridView1_EditFormShowing(object sender, DevExpress.XtraGrid.Views.Grid.EditFormShowingEventArgs e)
-        {
-            //    GridView view = (GridView)sender;
-            //    if (view == null)
-            //        return;
-            //    if (view.IsNewItemRow(e.RowHandle))
-            //    {
-            //        CustomGridView1.OptionsEditForm.FormCaptionFormat = "Thêm mới khách hàng";
-            //    }
-            //    else
-            //    {
-            //        CustomGridView1.OptionsEditForm.FormCaptionFormat = "Sửa thông tin khách hàng";
-            //    }
-        }
-        private void CustomGridView1_RowUpdated(object sender, DevExpress.XtraGrid.Views.Base.RowObjectEventArgs e)
-        {
-            //GridView view = (GridView)sender;
-
-            //if (view == null)
-            //    return;
-            //CDM_Khach_Hang v_objKhachHang = e.Row as CDM_Khach_Hang;
-            //if (v_objKhachHang != null)
-            //{
-            //    if (view.IsNewItemRow(e.RowHandle))
-            //    {
-            //        _objKhachHangBUS.Insert_DM_Khach_Hang(v_objKhachHang);
-            //    }
-            //    else
-            //    {
-            //        _objKhachHangBUS.Update_DM_Khach_Hang(v_objKhachHang);
-            //    }
-
-            //}
-
-        }
-
-        private void CustomGridView1_ValidatingEditor(object sender, DevExpress.XtraEditors.Controls.BaseContainerValidateEditorEventArgs e)
-        {
-
-            //if ((e as EditFormValidateEditorEventArgs).Column == colMa_Khach_Hang)
-
-            //{
-            //    if (string.IsNullOrEmpty(e.Value.ToString()))
-            //    {
-            //        e.Valid = false;
-            //        e.ErrorText = "Vui lòng nhập mã khách hàng";
-            //    }
-            //}
-
-        }
-
-        private void CustomGridView1_InvalidValueException(object sender, DevExpress.XtraEditors.Controls.InvalidValueExceptionEventArgs e)
-        {
-            //e.ExceptionMode = DevExpress.XtraEditors.Controls.ExceptionMode.NoAction;
         }
     }
 }
